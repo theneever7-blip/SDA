@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Seventh-day Adventist Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">               <h1>Seventh-day Adventist Church</h1>
+            </div>
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search the site..." required>
+                <button type="submit">Search</button>
+            </form>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+            <nav>    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beliefs.html">Beliefs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="worship.html">Worship & Lifestyle</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="find-church.html">Find a Church</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                         <li><a href="media.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>          </div>    </div>
+    </header>
+
+    <main>
+        <section id="search-results">
+            <div class="container">
+                <h2>Search Results</h2>
+                <p id="search-query">You searched for: <span id="query-text"></span></p>
+                <div id="results">
+                    <p>Search functionality is under development. Please use the navigation menu to explore our site.</p>
+                    <p>Suggested pages:</p>
+                    <ul>
+                        <li><a href="about.html">About the SDA Church</a></li>
+                        <li><a href="beliefs.html">Beliefs & Doctrines</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seventh-day Adventist Church. All rights reserved.</p>
+            <p>This website is for informational purposes only and is not officially affiliated with the General Conference of Seventh-day Adventists.</p>
+            <nav>\r\n                <div class="nav-logo">\r\n                    <img src="https://www.adventist.org/wp-content/themes/adventist/images/logo.png" alt="Seventh-day Adventist Church Logo">\r\n                </div>\r\n                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple script to display search query
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        if (query) {
+            document.getElementById('query-text').textContent = query;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Seventh-day Adventist Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">  <img src="images/download.png" alt="">           <h1>Seventh-day Adventist Church</h1>
+            </div>
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search the site..." required>
+                <button type="submit">Search</button>
+            </form>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+            <nav>               <div class="nav-logo"></div>    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beliefs.html">Beliefs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="worship.html">Worship & Lifestyle</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="find-church.html">Find a Church</a></li>
+                    <li><a href="blog.html">Blog</a></li>        
+               <li><a href="media.html">Videos</a></li>
+       
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>         </div>      </div>
+    </header>
+
+    <main>
+        <section id="blog-hero">
+            <div class="container">
+                <h2>SDA News & Blog</h2>
+                <p>Latest updates on SDA events, pastors, trips, district news, and more from around the world.</p>
+            </div>
+        </section>
+
+        <!-- News Categories Filter -->
+        <section id="news-filter">
+            <div class="container">
+                <h3>Filter News By Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All News</button>
+                    <button class="filter-btn" data-filter="latest-news">Latest News</button>
+                    <button class="filter-btn" data-filter="trips-events">Trips & Events</button>
+                    <button class="filter-btn" data-filter="district-news">Districts</button>
+                    <button class="filter-btn" data-filter="pastors">Pastors & Leaders</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest SDA News -->
+        <section id="latest-news" class="news-category">
+            <div class="container">
+                <h3>Latest SDA News</h3>
+                <div class="news-grid">
+                    <article class="news-post" data-category="latest-news">
+                        <img src="https://via.placeholder.com/400x250?text=SDA+Conference" alt="SDA Conference">
+                        <div class="news-content">
+                            <h4>Global SDA Conference Addresses Key Ministry Challenges</h4>
+                            <p class="article-meta">April 4, 2026 | General Conference</p>
+                            <p>The General Conference of Seventh-day Adventists convened today to discuss strategic priorities for the upcoming year, including outreach programs and community engagement initiatives...</p>
+                            <a href="#" class="cta-button">Read Full Story</a>
+                        </div>
+                    </article>
+
+                    <article class="news-post" data-category="latest-news">
+                        <img src="https://via.placeholder.com/400x250?text=Health+Initiative" alt="Health Program">
+                        <div class="news-content">
+                            <h4>SDA Global Health Initiative Reaches 50 Million People</h4>
+                            <p class="article-meta">April 2, 2026 | Health & Wellness</p>
+                            <p>The Seventh-day Adventist Church's health and wellness programs have successfully impacted over 50 million individuals across 215 countries, promoting lifestyle changes and preventive care...</p>
+                            <a href="#" class="cta-button">Read Full Story</a>
+                        </div>
+                    </article>
+
+                    <article class="news-post" data-category="latest-news">
+                        <img src="https://via.placeholder.com/400x250?text=Mission+Moment" alt="Mission Work">
+                        <div class="news-content">
+                            <h4>New SDA Church Dedicated in Remote Region</h4>
+                            <p class="article-meta">March 31, 2026 | Mission Stories</p>
+                            <p>A newly constructed Seventh-day Adventist church has been dedicate in a remote region, bringing spiritual hope to the local community. The facility will serve as a center for worship and community service...</p>
+                            <a href="#" class="cta-button">Read Full Story</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trips & Events Section -->
+        <section id="trips-events" class="news-category">
+            <div class="container">
+                <h3>Upcoming Trips & Events</h3>
+                <div class="events-grid">
+                    <article class="event-card" data-category="trips-events">
+                        <div class="event-header">
+                            <span class="event-date">April 15-20</span>
+                            <span class="event-location">📍 Africa Region</span>
+                        </div>
+                        <h4>SDA Youth Missionary Trip to East Africa</h4>
+                        <p class="event-description">Join hundreds of young Adventists on a transformative mission trip. Participate in community service, church construction, and spiritual revival meetings across East Africa.</p>
+                        <ul class="event-details">
+                            <li>Duration: 5 days</li>
+                            <li>Participants: Youth (18-40)</li>
+                            <li>Focus: Community Service & Evangelism</li>
+                        </ul>
+                        <a href="#" class="cta-button">Learn More & Register</a>
+                    </article>
+
+                    <article class="event-card" data-category="trips-events">
+                        <div class="event-header">
+                            <span class="event-date">May 1-5</span>
+                            <span class="event-location">📍 Asia-Pacific</span>
+                        </div>
+                        <h4>SDA Education & Leadership Summit</h4>
+                        <p class="event-description">An international gathering of educators, administrators, and church leaders to discuss innovative approaches to Christian education and organizational development.</p>
+                        <ul class="event-details">
+                            <li>Duration: 5 days</li>
+                            <li>Participants: Educators & Leaders</li>
+                            <li>Focus: Education & Organizational Growth</li>
+                        </ul>
+                        <a href="#" class="cta-button">Learn More & Register</a>
+                    </article>
+
+                    <article class="event-card" data-category="trips-events">
+                        <div class="event-header">
+                            <span class="event-date">May 10-12</span>
+                            <span class="event-location">📍 Europe & Middle East</span>
+                        </div>
+                        <h4>Music & Praise Conference</h4>
+                        <p class="event-description">A celebration of worship through music from SDA churches worldwide. Experience inspiring performances, workshops, and spiritual renewal with musicians and artists from around the globe.</p>
+                        <ul class="event-details">
+                            <li>Duration: 3 days</li>
+                            <li>Participants: All ages welcome</li>
+                            <li>Focus: Worship & Music Ministry</li>
+                        </ul>
+                        <a href="#" class="cta-button">Learn More & Register</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Districts News -->
+        <section id="district-news" class="news-category">
+            <div class="container">
+                <h3>SDA Districts News</h3>
+                <div class="districts-grid">
+                    <article class="district-card" data-category="district-news">
+                        <h4>North America Division</h4>
+                        <div class="district-news-item">
+                            <h5>New SDA Academy Inaugurated</h5>
+                            <p class="article-meta">April 3, 2026</p>
+                            <p>The North American Division opens its newest SDA academy, featuring state-of-the-art facilities and a comprehensive curriculum balancing academic excellence with spiritual development.</p>
+                        </div>
+                        <div class="district-news-item">
+                            <h5>District Evangelistic Campaign Launches</h5>
+                            <p class="article-meta">March 28, 2026</p>
+                            <p>Churches across the region unite for a region-wide evangelistic campaign aimed at reaching thousands with the Gospel message and strengthening existing communities.</p>
+                        </div>
+                        <a href="#" class="cta-button">View All District News</a>
+                    </article>
+
+                    <article class="district-card" data-category="district-news">
+                        <h4>Inter-American Division</h4>
+                        <div class="district-news-item">
+                            <h5>Community Health Outreach Weekend</h5>
+                            <p class="article-meta">April 1, 2026</p>
+                            <p>Over 2,000 volunteers from SDA churches in the Inter-American Division participate in a coordinated health screening and medical outreach program benefiting underserved communities.</p>
+                        </div>
+                        <div class="district-news-item">
+                            <h5>Youth Leadership Training Program</h5>
+                            <p class="article-meta">March 25, 2026</p>
+                            <p>The division launches an intensive leadership development program for young adults, preparing the next generation of church leaders and missionaries.</p>
+                        </div>
+                        <a href="#" class="cta-button">View All District News</a>
+                    </article>
+
+                    <article class="district-card" data-category="district-news">
+                        <h4>African Division</h4>
+                        <div class="district-news-item">
+                            <h5>Church Growth Initiative Shows Remarkable Results</h5>
+                            <p class="article-meta">April 2, 2026</p>
+                            <p>The African Division reports 40% growth in membership over the past year, with new churches being established in rural and urban areas across the continent.</p>
+                        </div>
+                        <div class="district-news-item">
+                            <h5>Educational Excellence Awards Ceremony</h5>
+                            <p class="article-meta">March 30, 2026</p>
+                            <p>Outstanding students and educators from African SDA schools are honored at an annual awards ceremony celebrating academic achievement and spiritual growth.</p>
+                        </div>
+                        <a href="#" class="cta-button">View All District News</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastors & Leaders Directory -->
+        <section id="pastors" class="news-category">
+            <div class="container">
+                <h3>SDA Pastors & Leaders Directory</h3>
+                <div class="pastors-directory">
+                    <div class="pastors-info">
+                        <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #666;">
+                            The Seventh-day Adventist Church operates in 215 countries and territories with thousands of dedicated pastors and spiritual leaders committed to serving their communities. Below are highlights of leadership from major regions.
+                        </p>
+                    </div>
+
+                    <div class="pastors-grid">
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">North America Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Dr. Mark Finley</p>
+                            <p class="pastor-bio">Overseeing spiritual leadership and ecclesiastical initiatives across North American SDA churches.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 2,050+</span>
+                                <span>Members: 850,000+</span>
+                            </div>
+                        </div>
+
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">Inter-American Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Pastor Luis Leonor</p>
+                            <p class="pastor-bio">Leading the powerful spiritual movement across Central America, South America, and the Caribbean regions.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 4,200+</span>
+                                <span>Members: 3,500,000+</span>
+                            </div>
+                        </div>
+
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">African Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Pastor Wintley Phipps</p>
+                            <p class="pastor-bio">Guiding the rapidly growing African church community with emphasis on outreach and education.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 8,500+</span>
+                                <span>Members: 7,200,000+</span>
+                            </div>
+                        </div>
+
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">Asia-Pacific Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Pastor Chek Yat Phoon</p>
+                            <p class="pastor-bio">Managing church operations across Asia and the Pacific Islands with focus on mission expansion.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 3,100+</span>
+                                <span>Members: 2,800,000+</span>
+                            </div>
+                        </div>
+
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">European Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Pastor Raafael Putter</p>
+                            <p class="pastor-bio">Leading spiritual renewal and church growth across Europe, the Middle East, and North Africa.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 1,800+</span>
+                                <span>Members: 600,000+</span>
+                            </div>
+                        </div>
+
+                        <div class="pastor-card" data-category="pastors">
+                            <div class="pastor-header">South American Division</div>
+                            <h4>Division President</h4>
+                            <p class="pastor-name">Pastor Ernesto Ortiz</p>
+                            <p class="pastor-bio">Coordinating ministry and outreach across the South American region with growing church presence.</p>
+                            <div class="pastor-stats">
+                                <span>Churches: 2,200+</span>
+                                <span>Members: 2,100,000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pastors-directory-info" style="margin-top: 3rem; text-align: center;">
+                        <h4>Local & Regional Pastors</h4>
+                        <p>For information about pastors and leaders in your local church, district, or region, please contact:</p>
+                        <p style="margin-top: 1rem;">
+                            <strong>General Conference of Seventh-day Adventists</strong><br>
+                            12501 Old Columbia Pike, Silver Spring, MD 20904<br>
+                            Phone: +1-301-680-6000<br>
+                            Website: <a href="https://www.adventist.org" target="_blank">www.adventist.org</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Blog Posts -->
+        <section id="featured-post">
+            <div class="container">
+                <h3>Featured Article</h3>
+                <article class="featured-article">
+                    <img src="https://via.placeholder.com/600x400?text=Featured+Article" alt="Featured article image">
+                    <div class="article-content">
+                        <h4>Understanding the Sabbath: A Gift from God</h4>
+                        <p class="article-meta">By Pastor John Smith | April 5, 2026</p>
+                        <p>The seventh-day Sabbath is not just a day of rest, but a celebration of God's creative power and His covenant with His people. In this article, we explore the biblical foundation of Sabbath observance and its relevance for today's world...</p>
+                        <a href="#" class="cta-button">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Devotionals -->
+        <section id="devotionals">
+            <div class="container">
+                <h3>Daily Devotionals</h3>
+                <div class="devotional-content">
+                    <div class="devotional-text">
+                        <h4>Today's Devotional: Rest in His Peace</h4>
+                        <p class="devotional-verse">"Come to me, all you who are weary and burdened, and I will give you rest." - Matthew 11:28</p>
+                        <p>In our fast-paced world, finding true rest seems impossible. Yet Jesus invites us to come to Him with our burdens. The Sabbath is not just a day off work, but a time to reconnect with our Creator...</p>
+                        <a href="#" class="cta-button">Read Today's Devotional</a>
+                    </div>
+                    <div class="devotional-image">
+                        <img src="https://via.placeholder.com/400x300?text=Peaceful+Scene" alt="Peaceful scene for devotional">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories">
+            <div class="container">
+                <h3>Browse by Category</h3>
+                <div class="categories-grid">
+                    <a href="#" class="category-link">Spiritual Growth</a>
+                    <a href="#" class="category-link">Health & Wellness</a>
+                    <a href="#" class="category-link">Family Life</a>
+                    <a href="#" class="category-link">Mission Stories</a>
+                    <a href="#" class="category-link">Youth Ministry</a>
+                    <a href="#" class="category-link">Education</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seventh-day Adventist Church. All rights reserved.</p>
+            <p>This website is for informational purposes only and is not officially affiliated with the General Conference of Seventh-day Adventists.</p>
+            <nav>\r\n                <div class="nav-logo">\r\n                    <img src="https://www.adventist.org/wp-content/themes/adventist/images/logo.png" alt="Seventh-day Adventist Church Logo">\r\n                </div>\r\n                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

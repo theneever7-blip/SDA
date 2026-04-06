@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media & Videos - Seventh-day Adventist Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                 <img src="images/download.png" alt=""> 
+                <h1>Seventh-day Adventist Church</h1>
+            </div>
+            <form id="search-form" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search the site..." required>
+                <button type="submit">Search</button>
+            </form>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+            <nav>
+                <div class="nav-logo">
+            
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beliefs.html">Beliefs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="worship.html">Worship & Lifestyle</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="find-church.html">Find a Church</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                                      <li><a href="media.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="media-hero">
+            <div class="container">
+                <h2>SDA Media & News</h2>
+                <p>Your daily feed of inspiring content from Seventh-day Adventist churches, youth, pastors, and ministries worldwide</p>
+            </div>
+        </section>
+
+        <!-- Media Filter -->
+        <section id="media-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="media-filter-btn active" data-media-filter="all">All</button>
+                    <button class="media-filter-btn" data-media-filter="sermons">Sermons</button>
+                    <button class="media-filter-btn" data-media-filter="youth">Youth & Camps</button>
+                    <button class="media-filter-btn" data-media-filter="pathfinders">Pathfinders</button>
+                    <button class="media-filter-btn" data-media-filter="events">Church Events</button>
+                    <button class="media-filter-btn" data-media-filter="pastors">Pastors & Leaders</button>
+                    <button class="media-filter-btn" data-media-filter="adventures">Adventures</button>
+                    <button class="media-filter-btn" data-media-filter="news">News & Updates</button>
+                    <button id="shuffle-btn" class="shuffle-btn">🔀 Shuffle</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Feed Grid -->
+        <section id="news-feed">
+            <div class="container">
+                <div class="news-grid" id="news-grid">
+                    <!-- YouTube Content -->
+                    <div class="news-card" data-media-category="sermons">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/WL-Q-I_b5FQ" title="SDA Sermon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Understanding God's Love for You</h3>
+                            <p class="card-meta">Pastor David Asscherick • April 2, 2026</p>
+                            <p>A dynamic sermon exploring what it truly means to be loved by God and how to experience that love in your daily life.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="youth">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/cQXqkrfHLvE" title="Youth Camp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Annual Youth Camp 2026 Highlights</h3>
+                            <p class="card-meta">SDA Youth Ministry • March 30, 2026</p>
+                            <p>Experience the excitement and spiritual growth of our annual youth camp with outdoor adventures and devotional services.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="pathfinders">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/Ig1kVgAjR_U" title="Pathfinders" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Pathfinder Skills Training & Certification</h3>
+                            <p class="card-meta">Pathfinder Leadership • March 28, 2026</p>
+                            <p>Join pathfinders as they complete challenging outdoors skills training and earn their certification badges.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="events">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/njqH9SLRZkc" title="Church Event" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>District Camp Meeting 2026</h3>
+                            <p class="card-meta">SDA District • April 1, 2026</p>
+                            <p>The annual district camp meeting bringing together thousands of Adventists for spiritual renewal and fellowship.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="pastors">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/S9TJ1eULspU" title="Pastor Feature" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Meet Pastor Johnson from Kenya</h3>
+                            <p class="card-meta">Pastor Profiles • March 31, 2026</p>
+                            <p>Inspiring story of a pastor dedicated to spreading the gospel in Africa and leading church growth across multiple districts.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="adventures">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/1ydS6KKbVnI" title="Outdoor Adventure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Mountain Expedition with Youth Ministry</h3>
+                            <p class="card-meta">SDA Adventures • March 25, 2026</p>
+                            <p>Young adventurers summiting peaks while strengthening their faith and building lifelong friendships in nature.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="sermons">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/5n0R8VslmKs" title="Sermon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Sabbath Morning Worship Service</h3>
+                            <p class="card-meta">Local Church • April 3, 2026</p>
+                            <p>Beautiful sabbath morning worship featuring the pastoral message and inspiring music from the choir.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="news">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/zN5pNhSYN70" title="News" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>SDA Global News Roundup</h3>
+                            <p class="card-meta">News Desk • March 28, 2026</p>
+                            <p>Latest updates from SDA conferences, institutions, and mission work happening around the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="youth">
+                        <div class="card-image">
+                            <iframe src="https://www.youtube.com/embed/q5p6qCfvVH8" title="Youth Event" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">YouTube</span>
+                            <h3>Youth Conference 2026</h3>
+                            <p class="card-meta">Youth Ministry • March 20, 2026</p>
+                            <p>Dynamic youth conference featuring contemporary worship, workshops, and spiritual guidance for young adults.</p>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Content -->
+                    <div class="news-card" data-media-category="pathfinders">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Pathfinder+Adventure" alt="Pathfinder Adventure">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Instagram</span>
+                            <h3>Pathfinder Hiking Trip</h3>
+                            <p class="card-meta">@SDAPaths • April 3, 2026</p>
+                            <p>Amazing moments from our pathfinder hiking expedition. Check our Instagram for more behind-the-scenes photos!</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="events">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Church+Function" alt="Church Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Instagram</span>
+                            <h3>Easter Celebration at Lake District</h3>
+                            <p class="card-meta">@LakeDistrictSDA • April 2, 2026</p>
+                            <p>Beautiful Easter sunrise service with hundreds of believers celebrating the resurrection of Christ.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="pastors">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Pastor+Profile" alt="Pastor">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Instagram</span>
+                            <h3>Pastor Spotlight: Sister Maria from Brazil</h3>
+                            <p class="card-meta">@PastorProfiles • April 1, 2026</p>
+                            <p>Meet our pastor serving in Brazil, spreading God's word and impacting thousands of lives.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="adventures">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Adventure+Activity" alt="Adventure">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Instagram</span>
+                            <h3>Rock Climbing Challenge</h3>
+                            <p class="card-meta">@SDAAdventures • March 31, 2026</p>
+                            <p>Youth taking on exciting rock climbing challenges, building confidence and teamwork skills.</p>
+                        </div>
+                    </div>
+
+                    <!-- TikTok Style Cards -->
+                    <div class="news-card" data-media-category="youth">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Youth+Activity" alt="Youth">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">TikTok</span>
+                            <h3>Youth Worship & Dance</h3>
+                            <p class="card-meta">@YouthAlive • March 30, 2026</p>
+                            <p>Energetic worship performances by youth bringing modern music to our church services.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="news">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=SDA+News" alt="News">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">TikTok</span>
+                            <h3>Amazing Faith Stories</h3>
+                            <p class="card-meta">@SDAAmazingFaith • March 29, 2026</p>
+                            <p>Short inspirational clips of how God is working in people's lives across the world.</p>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Cards -->
+                    <div class="news-card" data-media-category="events">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Community+Service" alt="Service">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Facebook</span>
+                            <h3>Community Service Day</h3>
+                            <p class="card-meta">SDA District Outreach • March 28, 2026</p>
+                            <p>Members serving our community through food drives, home repairs, and neighborhood clean-ups.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="pastors">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Pastor+Message" alt="Pastor">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Facebook</span>
+                            <h3>Weekly Message from Conference President</h3>
+                            <p class="card-meta">SDA Conference • March 27, 2026</p>
+                            <p>Important updates and spiritual guidance from the leadership of our conference.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-media-category="sermons">
+                        <div class="card-image card-image-placeholder">
+                            <img src="https://via.placeholder.com/400x300?text=Bible+Study" alt="Study">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-source">Facebook</span>
+                            <h3>Online Bible Study Sessions</h3>
+                            <p class="card-meta">SDA Learning Center • March 26, 2026</p>
+                            <p>Free weekly Bible study classes available online for everyone interested in deepening their faith.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Content -->
+        <section id="submit-content">
+            <div class="container">
+                <h3>Share Your Content</h3>
+                <div class="submit-content-box">
+                    <p>Do you have inspiring sermons, videos, music, testimonies, or educational content you'd like to share with the global SDA community?</p>
+                    <p><strong>We'd love to feature your content!</strong> Whether it's a powerful sermon performance, a meaningful testimony, or educational material, your contribution can inspire and uplift others.</p>
+                    <p>For submission guidelines and to upload your content, please <a href="contact.html">contact us here</a> or email: <strong>media@adventist.org</strong></p>
+                    <a href="contact.html" class="cta-button">Submit Content</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Seventh-day Adventist Church. All rights reserved.</p>
+            <p>This website is for informational purposes only and is not officially affiliated with the General Conference of Seventh-day Adventists.</p>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Shuffle grid layout
+        function shuffleCards() {
+            const grid = document.getElementById('news-grid');
+            const cards = Array.from(grid.children);
+            for (let i = cards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [cards[i], cards[j]] = [cards[j], cards[i]];
+            }
+            cards.forEach(card => grid.appendChild(card));
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mediaFilterButtons = document.querySelectorAll('.media-filter-btn');
+            const newsCards = document.querySelectorAll('[data-media-category]');
+            const shuffleBtn = document.getElementById('shuffle-btn');
+
+            // Shuffle on page load
+            shuffleCards();
+
+            // Filter functionality
+            mediaFilterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    mediaFilterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-media-filter');
+                    newsCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-media-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Shuffle button
+            if (shuffleBtn) {
+                shuffleBtn.addEventListener('click', function() {
+                    shuffleCards();
+                    this.style.transform = 'rotate(360deg)';
+                    setTimeout(() => {
+                        this.style.transform = 'rotate(0deg)';
+                    }, 300);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
